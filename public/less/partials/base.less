@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: blue;
+    background-color: #eee;
+
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 320px;
+    min-height: 300px;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+
+    .user-input {
+        width: 100%;
+        border: 0px;
+        border-radius: 2px;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .calc-input {
+        width: 40px;
+        text-align: center;
+    }
+
+    .submit-input {
+        display: block;
+        margin: 2rem auto;
+        text-align: center;
+    }
+}

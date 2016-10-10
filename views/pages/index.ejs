@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ../partials/header.ejs %>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>Transterbator</h1>
+            <p>Type in something to transterbate ala google translate 2005</p>
+            <textarea class="user-input" id="translate-input"></textarea>
+
+            <label for="language-from">From</label>
+            <select name="language-from" class="language-from">
+                <option value="dan">Danish</option>
+                <option value="eng">English</option>
+                <option value="swe">Swedish</option>
+                <option value="spa">Spanish</option>
+                <option value="jpn">Japanese</option>
+            </select>
+
+            <label for="language-to">To</label>
+            <select name="language-to" class="language-to">
+                <option value="eng">English</option>
+                <option value="dan">Danish</option>
+                <option value="swe">Swedish</option>
+                <option value="spa">Spanish</option>
+                <option value="jpn">Japanese</option>
+            </select>
+
+            <button class="submit-input" id="do-translate">Translate</button>
+
+            <p class="translation"></p>
+
+        </div>
+    </body>
+</html>

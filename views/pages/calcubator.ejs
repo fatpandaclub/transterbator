@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ../partials/header.ejs %>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>Calcubator</h1>
+            <p>Now we can also calcubate yay</p>
+            <input type="text" id="calculate-input-first" class="user-input calc-input">
+            <select name="operation" id="calculate-input-operation" class="select">
+                <option value="add">+</option>
+                <option value="sub">-</option>
+                <option value="mul">*</option>
+                <option value="div">/</option>
+            </select>
+            <input type="text" id="calculate-input-second" class="user-input calc-input">
+
+            <button id="do-calculate" class="submit-input">Calcubate</button>
+
+            <p class="calculation"></p>
+
+        </div>
+    </body>
+</html>
